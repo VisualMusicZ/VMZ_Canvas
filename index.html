@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define the character encoding and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here you can find the title of the webpage -->
+    <title>Canvas</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Use the <img> tag to display the image as a background -->
+    <img src="imgs/Zenith.jpeg" alt="" style="position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1;">
+    
+    <!-- Here's the container for menu buttons -->
+    <div id="menu-container">
+        <!-- Button to show the canvas display -->
+        <button id="canvas-button">Canvas</button>
+        <!-- Button to show the instructions display -->
+        <button id="instructions-button">Instructions</button>
+    </div>
+    <!-- Main content container -->
+    <main class="main-container">
+        <!-- Canvas element for drawing -->
+        <canvas id="main-canvas" width="500" height="500" style="display:none;"></canvas>
+        <!-- Instructions section -->
+        <div id="instructions" style="display:none;">
+            <!-- Over here you will se the instructions text -->
+            <p style="color:white;">Instructions:</p>
+            <p style="color:white;">
+                Welcome to your personal musical canvas!
+                Unlock your creativity within these lines, but remember, there are guidelines to enhance your journey:
+                Harness your imagination with a single, uninterrupted stroke.
+                Once your masterpiece is complete, click the download button to claim it.
+                Refresh the canvas after your creation is safely stored.
+                Embark on this melodic adventure and savor every moment!
+            </p>
+        </div>
+        <!-- Container for the canvas background -->
+        <div id="canvas-back" style="display:none;">
+
+        </div>
+        <!-- Button to clear the canvas -->
+        <button id="clear-button">Clear</button>
+        <!-- Button to download the canvas content -->
+        <button id="download-button">Download</button>
+    </main>
+    <!-- The script to include the JavaScript file -->
+    <script src="assets/index.js"></script>
+</body>
+</html>

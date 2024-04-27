@@ -1,0 +1,79 @@
+/* Here's the body styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for menu buttons */
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Button styles */
+#menu-container button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect to be darker */
+#menu-container button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Main content container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+canvas {
+    border: 1px solid white;
+}
+
+
+#instructions {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+
+#instructions p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Over here we determine the button styles for clear and download buttons */
+#clear-button, #download-button {
+    background-color: #f44336; 
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* The effect of the buttons to make them darker */
+#clear-button:hover, #download-button:hover {
+    background-color: #d32f2f; 
+}
